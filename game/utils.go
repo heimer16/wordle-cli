@@ -253,7 +253,7 @@ func (m *AppModel) copyShareString(automatic bool) tea.Cmd {
 		return nil
 	}
 
-	str := strings.ReplaceAll(m.getShareString(), "🔳", "⬜")
+	str := strings.ReplaceAll(m.getShareString(), "🔳", "⬛️")
 	_ = clipboard.WriteAll(str)
 
 	return nil
